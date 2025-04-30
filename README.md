@@ -1,3 +1,5 @@
+# This is a fork ! Go to the [official repo](https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file)
+---
 # kickstart.nvim
 
 ## Introduction
