@@ -867,6 +867,7 @@ require('lazy').setup({
       signature = { enabled = true },
     },
   },
+  { 'AlphaTechnolog/pywal.nvim', as = 'pywal' },
   { 'rebelot/kanagawa.nvim' },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
