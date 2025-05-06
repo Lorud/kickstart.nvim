@@ -867,7 +867,15 @@ require('lazy').setup({
       signature = { enabled = true },
     },
   },
-  { 'AlphaTechnolog/pywal.nvim', as = 'pywal' },
+  {
+    'RedsXDD/neopywal.nvim',
+    name = 'neopywal',
+    lazy = true,
+    priority = 1000,
+    opts = {
+      use_palette = 'wallust',
+    },
+  },
   { 'rebelot/kanagawa.nvim' },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
@@ -887,7 +895,7 @@ require('lazy').setup({
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.cmd.colorscheme 'kanagawa'
+      vim.cmd.colorscheme 'neopywal-dark'
     end,
   },
 
