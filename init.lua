@@ -867,16 +867,6 @@ require('lazy').setup({
       signature = { enabled = true },
     },
   },
-  {
-    'RedsXDD/neopywal.nvim',
-    name = 'neopywal',
-    lazy = true,
-    priority = 1000,
-    opts = {
-      use_palette = 'wallust',
-    },
-  },
-  { 'rebelot/kanagawa.nvim' },
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then
     -- change the command in the config to whatever the name of that colorscheme is.
@@ -980,7 +970,7 @@ require('lazy').setup({
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
   --
   -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
   -- Or use telescope!
@@ -1008,14 +998,7 @@ require('lazy').setup({
   },
 })
 
--- Load the colorscheme here.
--- Check if neopywall's coloscheme file is available
--- if not use of another theme
-if vim.uv.fs_stat(vim.fs.abspath '~/.cache/wallust/colors_neopywal.vim') then
-  vim.cmd.colorscheme 'neopywal-dark'
-else
-  vim.cmd.colorscheme 'kanagawa-lotus'
-end
-
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- require 'lua'
