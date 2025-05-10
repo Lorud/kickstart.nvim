@@ -682,11 +682,16 @@ require('lazy').setup({
           -- capabilities = {},
           settings = {
             Lua = {
+              workspace = {
+                library = {
+                  '${3rd}/love2d/library',
+                },
+              },
               completion = {
                 callSnippet = 'Replace',
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-              -- diagnostics = { disable = { 'missing-fields' } },
+              diagnostics = { disable = { 'missing-fields' } },
             },
           },
         },

@@ -51,7 +51,12 @@ return {
   {
     'S1M0N38/love2d.nvim',
     event = 'VeryLazy',
-    opts = {},
+    opts = {
+      path_to_love_bin = 'love',
+      path_to_love_library = vim.fn.globpath(vim.o.runtimepath, 'love2d/library'),
+      restart_on_save = false,
+      debug_window_opts = nil,
+    },
     keys = {
       { '<leader>v', ft = 'lua', desc = 'LÖVE' },
       { '<leader>vv', '<cmd>LoveRun<cr>', ft = 'lua', desc = 'Run LÖVE' },
