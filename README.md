@@ -1,6 +1,6 @@
-# This is a fork ! Go to the [official repo](https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file)
----
 # kickstart.nvim
+
+This is a fork ! Go to the [official repo](https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file)
 
 ## Introduction
 
@@ -240,3 +240,22 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
+### One More thing about LÖVE 2D
+
+After installing LÖVE on your system and LSP.
+
+Create at the root of your LÖVE project a .luarc.json file
+
+<details><summary>.luarc.json</summary>
+
+```json
+{
+	"runtime.special": {
+		"love.filesystem.load": "loadfile"
+	},
+	"workspace.library": [
+		"${3rd}/love2d/library"
+	]
+}
+```
+</details>
