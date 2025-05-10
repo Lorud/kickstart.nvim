@@ -240,11 +240,9 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 ```
 </details>
 
-### One More thing about LÖVE 2D
+## One More thing about LÖVE 2D
 
-After installing LÖVE on your system and LSP.
-
-Create at the root of your LÖVE project a .luarc.json file
+After installing LÖVE on your system and LSP, create at the root of your LÖVE project a .luarc.json file with these instructions
 
 <details><summary>.luarc.json</summary>
 
