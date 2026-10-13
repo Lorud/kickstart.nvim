@@ -29,8 +29,8 @@
  signal:start(
    'sigusr1',
    vim.schedule_wrap(function()
-     package.loaded['matugen'] = nil
-     require('matugen').setup()
+     package.loaded['custom.matugen'] = nil
+     require('custom.matugen').setup()
    end)
  )
 

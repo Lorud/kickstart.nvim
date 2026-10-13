@@ -3,6 +3,6 @@ vim.pack.add({
 --	"https://github.com/InioX/matugen-themes/tree/main/templates/neovim"
 })
 
--- require('matugen').setup()
-vim.cmd.colorscheme 'base16-gruvbox-dark-medium'
+pcall(function() require('custom.matugen').setup() end)
+-- vim.cmd.colorscheme 'base16-gruvbox-dark-medium'
 
