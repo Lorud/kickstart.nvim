@@ -10,5 +10,6 @@ spell/
 # For the official `nvim-lua/kickstart.nvim` git repository, we leave it ignored to avoid unneeded
 # merge conflicts.
 nvim-pack-lock.json
+lua/custom/matugen.lua
 
 .DS_Store
